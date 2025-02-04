@@ -1,0 +1,11 @@
+$paymiriy-color: #04da4b;
+$bg-color: #444;
+$font-display: "Rubik Dirt", serif;
+$font-text: "inter", sans-serif;
+
+@mixin tablet-and-up() {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  
