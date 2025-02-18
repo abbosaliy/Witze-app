@@ -4,7 +4,7 @@ import {
   getSavedJokes,
   removeJokes,
   saveToLocalStorage,
-} from "./scripts/localStorage";
+} from "./scripts/localstorage";
 
 const currentJokeBtn = document.querySelector(".current-joke__load");
 const currentJoketext = document.querySelector(".current-joke__text");
