@@ -14,6 +14,8 @@ const savedJokeEl = document.querySelector(".saved-jokes__el");
 currentJokeBtn.addEventListener("click", newJokeLoad);
 saveJokeBtn.addEventListener("click", currendSavedJoke);
 
+
+
 let currentJoke = "";
 
 async function newJokeLoad() {
