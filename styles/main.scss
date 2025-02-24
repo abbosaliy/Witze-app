@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: $font-text;
- 
 }
 
 .joke-app {
@@ -12,9 +11,9 @@ body {
   margin: 0px auto;
   text-align: center;
   padding: 1rem;
-
+  
   &__title {
-    color: $paymiriy-color;
+    color: $primary-color;
     font-family: $font-display;
     font-weight: 400;
     font-size: 3rem;
@@ -34,15 +33,18 @@ body {
     font-size: 1.2rem;
     padding: 1rem;
     word-wrap: break-word;
+
     @include tablet-and-up() {
       font-size: 1.5rem;
     }
   }
+
   &__action {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     gap: 1rem;
+
     @include tablet-and-up() {
       display: flex;
       flex-direction: row;
@@ -50,25 +52,28 @@ body {
       gap: 2rem;
     }
   }
+
   &__load:hover {
     background-color: #04c142;
     border-color: #04c142;
   }
+
   &__load {
     font-size: 1rem;
     padding: 1rem 1.5rem;
-    background-color: $paymiriy-color;
+    background-color: $primary-color;
     color: #000;
-    border: 1px solid $paymiriy-color;
+    border: 1px solid $primary-color;
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
 
   &__save:hover {
-    background-color: $paymiriy-color;
+    background-color: $primary-color;
     color: #000;
   }
+
   &__save {
     display: flex;
     align-items: center;
@@ -76,10 +81,10 @@ body {
     justify-content: center;
     gap: 0.3rem;
     font-size: 1rem;
-    color: $paymiriy-color;
+    color: $primary-color;
     padding: 1rem 1.5rem;
     background-color: $bg-color;
-    border: 1px solid $paymiriy-color;
+    border: 1px solid $primary-color;
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -104,16 +109,19 @@ body {
     flex-direction: column-reverse;
     gap: 0.3rem;
   }
+
   &__title {
     margin-top: 3rem;
     font-family: "Rubik Dirt", serif;
     font-weight: 300;
     display: flex;
     font-size: 2rem;
+
     @include tablet-and-up() {
       font-size: 2.5rem;
     }
   }
+
   &__liste {
     margin-top: 1rem;
     display: flex;
@@ -123,17 +131,21 @@ body {
     box-shadow: 0px 12px 32px 0px rgba(10, 220, 7, 0.1),
       0px 2px 4px 0px rgba(10, 220, 7, 0.1);
     padding: 1rem;
-    gap: 0.3rem;
+    gap: 1rem;
   }
+
   &__text {
     font-size: 0.8rem;
+
     @include tablet-and-up() {
       font-size: 1rem;
     }
   }
+
   &__remove:hover {
     background-color: #ea1111;
   }
+
   &__remove {
     border: none;
     height: fit-content;

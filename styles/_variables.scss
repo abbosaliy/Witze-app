@@ -1,4 +1,4 @@
-$paymiriy-color: #04da4b;
+$primary-color: #04da4b;
 $bg-color: #444;
 $font-display: "Rubik Dirt", serif;
 $font-text: "inter", sans-serif;
@@ -21,13 +21,16 @@ $font-text: "inter", sans-serif;
     transition: all 1s;
   }
 }
+
 .thema-toggle{
   transition: all 1s ease-in-out;
 }
+
 .btn-light {
  color: #ffa500;
   background-color: white;
 }
+
 .btn-dark {
  color:white;
   background-color: #333;
@@ -36,10 +39,12 @@ $font-text: "inter", sans-serif;
 .toggleBtn {
   display: none;
 }
+
 .background-body {
   background-color: #333;
   color: white;
 }
+
 .background-box {
   background-color: #444;
   color: white;
