@@ -1,5 +1,7 @@
-$primary-color: #04da4b;
+$primary-color: rgb(60, 60, 60);
 $bg-color: #444;
+$buttonLightColor: #3498db;
+$buttonDarklColor: #04c142;
 $font-display: "Rubik Dirt", serif;
 $font-text: "inter", sans-serif;
 
@@ -22,18 +24,18 @@ $font-text: "inter", sans-serif;
   }
 }
 
-.thema-toggle{
+.thema-toggle {
   transition: all 1s ease-in-out;
 }
 
 .btn-light {
- color: #ffa500;
-  background-color: white;
+  color: $primary-color;
+  background-color: #f0f8ff;
 }
 
 .btn-dark {
- color:white;
-  background-color: #333;
+  color: white;
+  background-color: #302f2f;
 }
 
 .toggleBtn {
@@ -41,11 +43,49 @@ $font-text: "inter", sans-serif;
 }
 
 .background-body {
-  background-color: #333;
-  color: white;
+  background-color: #302f2f;
+  color: rgb(243, 232, 232);
 }
 
 .background-box {
-  background-color: #444;
+  background-color: #313131;
   color: white;
+}
+
+.bodyLightColor {
+  background-color: #f0f8ff;
+}
+
+.titleDark {
+  color: #04c142;
+}
+.currentBtnLight {
+  background-color: $buttonLightColor;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid $buttonLightColor;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: white;
+}
+.currentBtnLight:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+.btnDark {
+  background-color: $buttonDarklColor;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid $buttonDarklColor;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: white;
+}
+.btnDark:hover {
+  background-color: #039c36;
 }

@@ -1,5 +1,6 @@
 @use "variables" as *;
 
+
 body {
   margin: 0;
   padding: 0;
@@ -11,9 +12,8 @@ body {
   margin: 0px auto;
   text-align: center;
   padding: 1rem;
-  
+
   &__title {
-    color: $primary-color;
     font-family: $font-display;
     font-weight: 400;
     font-size: 3rem;
@@ -26,8 +26,7 @@ body {
 .current-joke {
   padding: 1rem;
   border-radius: 5px;
-  box-shadow: 0px 12px 32px 0px rgba(10, 220, 7, 0.1),
-    0px 2px 4px 0px rgba(10, 220, 7, 0.1);
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.15), 0px 3px 6px rgba(0, 0, 0, 0.1);
 
   &__text {
     font-size: 1.2rem;
@@ -53,42 +52,11 @@ body {
     }
   }
 
-  &__load:hover {
-    background-color: #04c142;
-    border-color: #04c142;
-  }
-
-  &__load {
-    font-size: 1rem;
-    padding: 1rem 1.5rem;
-    background-color: $primary-color;
-    color: #000;
-    border: 1px solid $primary-color;
-    border-radius: 4px;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
-
-  &__save:hover {
-    background-color: $primary-color;
-    color: #000;
-  }
-
   &__save {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    gap: 0.3rem;
-    font-size: 1rem;
-    color: $primary-color;
-    padding: 1rem 1.5rem;
-    background-color: $bg-color;
-    border: 1px solid $primary-color;
-    border-radius: 4px;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-
     &--hidden {
       display: none;
     }
@@ -128,8 +96,8 @@ body {
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
-    box-shadow: 0px 12px 32px 0px rgba(10, 220, 7, 0.1),
-      0px 2px 4px 0px rgba(10, 220, 7, 0.1);
+    box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.15),
+      0px 3px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     gap: 1rem;
   }
